@@ -13,6 +13,10 @@ import name.ratson.cordova.admob.AbstractExecutor;
 class RewardVideoListener implements RewardedVideoAdListener {
     private final RewardVideoExecutor executor;
 
+    @Override
+    public void onRewardedVideoCompleted() {
+    }
+
     RewardVideoListener(RewardVideoExecutor executor) {
         this.executor = executor;
     }
